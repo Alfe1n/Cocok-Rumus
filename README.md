@@ -1,10 +1,7 @@
 ## Project Overview: Memory Game
 
 
-2	+
-3	+
 #### Description:
-4	+
 The "Memory Game" project is a graphical, Java-based memory game application where players match pairs of cards within a grid. The game features user-friendly menus, scoring mechanisms, and difficulty levels. This project is implemented using `Swing` for the GUI and adheres to Object-Oriented Programming (OOP) principles.
 5	+
 6	+
