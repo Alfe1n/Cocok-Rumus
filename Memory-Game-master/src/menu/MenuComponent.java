@@ -34,10 +34,10 @@ public class MenuComponent extends JComponent {
     }
 
     public void addTitle() {
-        MenuLabel gameName = new MenuLabel("Memory Game", new Font(Font.MONOSPACED, Font.BOLD, 102), Color.WHITE);
+        MenuLabel gameName = new MenuLabel("Cocok Rumus", new Font(Font.MONOSPACED, Font.BOLD, 102), Color.WHITE);
         mainPanel.add(gameName);
 
-        MenuLabel author = new MenuLabel("Mateusz Sędzimierz", new Font(Font.DIALOG, Font.PLAIN, 62), Color.WHITE);
+        MenuLabel author = new MenuLabel("Kelompok 8", new Font(Font.DIALOG, Font.PLAIN, 62), Color.WHITE);
         mainPanel.add(author);
     }
 

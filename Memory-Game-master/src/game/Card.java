@@ -7,7 +7,7 @@ import java.awt.*;
 public class Card extends JButton {
     private ImageIcon imageIcon;
     private Color color;
-    private boolean addedToBoard;
+    private boolean addmoduedToBoard;
     private boolean clicked;
     private boolean ninjaMode;
 
