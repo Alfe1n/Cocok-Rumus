@@ -8,30 +8,36 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class SelectLevelPanel extends JPanel {
-    private JPanel buttonPanel;
-    private ButtonGroup group;
+    private JPanel buttonPanel; 
+    private ButtonGroup group; 
     private LevelDialog owner;
     private final Level DEFAULT_LEVEL = Level.Easy;
 
     public SelectLevelPanel(LevelDialog owner) {
         this.owner = owner;
-        owner.setLevel(DEFAULT_LEVEL);
-        setOpaque(false);
+        owner.setLevel(DEFAULT_LEVEL); 
+        setOpaque(false); 
 
-        MenuLabel messageLabel = new MenuLabel("Select the level : ", new Font(Font.SANS_SERIF, Font.BOLD, 50), Color.WHITE);
-        messageLabel.setBorder(new EmptyBorder(20, 20, 40, 20));
-        add(messageLabel, BorderLayout.CENTER);
+        // Label "Pilih level"
+        MenuLabel messageLabel = new MenuLabel("Pilih level : ", new Font(Font.SANS_SERIF, Font.BOLD, 50), Color.WHITE);
+        messageLabel.setBorder(new EmptyBorder(20, 20, 15, 20));
+        setLayout(new BorderLayout()); 
+        add(messageLabel, BorderLayout.NORTH); 
 
-        buttonPanel = new JPanel();
+        // Panel tombol (Easy dan Medium)
+        buttonPanel = new JPanel(new GridLayout(1, 2, 50, 0)); 
+        buttonPanel.setOpaque(false); 
+
         group = new ButtonGroup();
-
         addRadioButton("Easy", Level.Easy);
         addRadioButton("Medium", Level.Medium);
-        addRadioButton("Hard", Level.Hard);
-        addRadioButton("Crazy", Level.Crazy);
 
-        buttonPanel.setOpaque(false);
-        add(buttonPanel, BorderLayout.SOUTH);
+        // Panel wrapper untuk memusatkan tombol
+        JPanel centerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER)); 
+        centerPanel.setOpaque(false); 
+        centerPanel.add(buttonPanel);
+
+        add(centerPanel, BorderLayout.CENTER); 
     }
 
     public void addRadioButton(String name, Level level) {
@@ -43,16 +49,17 @@ public class SelectLevelPanel extends JPanel {
         button.setFocusPainted(false);
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
+        // Ikon kustom untuk tombol radio
         button.setIcon(new ImageIcon(getClass().getResource("../images/Dot.png")));
         button.setSelectedIcon(new ImageIcon(getClass().getResource("../images/TargetDot.png")));
         button.setBorder(new EmptyBorder(0, 30, 0, 30));
 
-        group.add(button);
+        group.add(button); 
 
-        button.setOpaque(false);
-        buttonPanel.add(button);
+        button.setOpaque(false); 
+        buttonPanel.add(button); 
 
-        ActionListener listener = event -> owner.setLevel(level);
+        ActionListener listener = event -> owner.setLevel(level); 
         button.addActionListener(listener);
     }
 }

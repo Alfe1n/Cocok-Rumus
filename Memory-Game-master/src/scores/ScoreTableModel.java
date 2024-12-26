@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class ScoreTableModel extends AbstractTableModel {
     private List<Score> scores;
-    private final String[] columnNames = {"NICK", "LEVEL", "TIME", "TRIALS", "SCORE"};
+    private final String[] columnNames = {"NAMA", "LEVEL", "WAKTU", "COBA", "SKOR"};
     private static ScoreTableModel scoreTableModel;
 
     private ScoreTableModel() {

@@ -6,7 +6,7 @@ import java.awt.*;
 
 public abstract class Dialog extends JDialog {
     private Image image;
-    private static final String DIALOG_BACKGROUND = "../images/Dialog.jpg";
+    private static final String DIALOG_BACKGROUND = "../images/d1.jpg";
     private JPanel panel;
 
     public Dialog(String title) {

@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class HighScoresDialog extends JDialog {
     private final Image image;
-    private static final String DIALOG_BACKGROUND = "../images/ScoresDialog.jpg";
+    private static final String DIALOG_BACKGROUND = "../images/scoresd1.jpg";
 
     public HighScoresDialog(String title) {
         setTitle(title);

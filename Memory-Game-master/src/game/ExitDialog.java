@@ -18,7 +18,7 @@ public class ExitDialog extends Dialog {
         super(title);
 
         setUndecorated(true);
-        String message = "What do you want to do ?";
+        String message = "Mau Ke mana ?";
         messageLabel = new MenuLabel(message, new Font(Font.SANS_SERIF, Font.BOLD, 50), Color.WHITE);
 
         super.getPanel().add(messageLabel, BorderLayout.CENTER);
@@ -28,9 +28,9 @@ public class ExitDialog extends Dialog {
     }
 
     public void addButtonPanel() {
-        continueButton = new MenuButton("Continue game", new Color(138, 200, 114), 28, BUTTON_SIZE);
-        goMenuButton = new MenuButton("Return to menu", new Color(132, 197, 200), 28, BUTTON_SIZE);
-        quitGameButton = new MenuButton("Quit game", new Color(200, 100, 100), 28, BUTTON_SIZE);
+        continueButton = new MenuButton("Lanjutkan", new Color(138, 200, 114), 28, BUTTON_SIZE);
+        goMenuButton = new MenuButton("Kembali ke Menu", new Color(132, 197, 200), 28, BUTTON_SIZE);
+        quitGameButton = new MenuButton("Keluar dari Game ", new Color(200, 100, 100), 28, BUTTON_SIZE);
 
         continueButton.addActionListener((event) ->
         {

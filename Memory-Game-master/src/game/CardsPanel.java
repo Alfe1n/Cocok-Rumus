@@ -32,14 +32,7 @@ public class CardsPanel extends JPanel {
                 setLayout(new GridLayout(6, 6, 13, 13));
                 setBorder(new EmptyBorder(15, 205, 10, 205));
                 break;
-            case Hard:
-                setLayout(new GridLayout(8, 8, 8, 8));
-                setBorder(new EmptyBorder(15, 210, 10, 210));
-                break;
-            case Crazy:
-                setLayout(new GridLayout(10, 10, 5, 5));
-                setBorder(new EmptyBorder(15, 210, 10, 210));
-                break;
+
         }
     }
 

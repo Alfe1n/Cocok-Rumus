@@ -11,7 +11,7 @@ import java.awt.*;
 public class MenuComponent extends JComponent {
     private JPanel mainPanel;
     private Image image;
-    private final String BACKGROUND_IMAGE = "../images/Background.jpg";
+    private final String BACKGROUND_IMAGE = "../images/bg2.jpg";
     private LevelDialog levelDialog;
     private HighScoresDialog scoresDialog;
 
@@ -42,7 +42,7 @@ public class MenuComponent extends JComponent {
     }
 
     public void addStartButton() {
-        MenuButton newGame = new MenuButton("New Game", new Color(138, 200, 114), 44, null);
+        MenuButton newGame = new MenuButton("Mulai", new Color(138, 200, 114), 44, null);
 
         newGame.addActionListener(event ->
         {
@@ -65,12 +65,12 @@ public class MenuComponent extends JComponent {
     }
 
     public void addHighScoreButton() {
-        MenuButton highScores = new MenuButton("High Scores", new Color(132, 197, 200), 44, null);
+        MenuButton highScores = new MenuButton("Papan Score", new Color(132, 197, 200), 44, null);
 
         highScores.addActionListener(event ->
         {
             if (scoresDialog == null)
-                scoresDialog = new HighScoresDialog("High Scores");
+                scoresDialog = new HighScoresDialog("Papan Score");
 
             scoresDialog.setLocationRelativeTo(null);
             scoresDialog.setVisible(true);
@@ -80,7 +80,7 @@ public class MenuComponent extends JComponent {
     }
 
     public void addExitButton() {
-        MenuButton exit = new MenuButton("Exit", new Color(200, 100, 100), 44, null);
+        MenuButton exit = new MenuButton("Keluar", new Color(200, 100, 100), 44, null);
 
         exit.addActionListener((event) -> System.exit(0));
 

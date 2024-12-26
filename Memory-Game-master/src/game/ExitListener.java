@@ -9,7 +9,7 @@ public class ExitListener implements ActionListener {
         UserPanel.getTimer().setTimeRunning(false);
         GameEngine.setPlaying(false);
 
-        ExitDialog exitDialog = new ExitDialog("Exit");
+        ExitDialog exitDialog = new ExitDialog("Keluar");
 
         exitDialog.setLocationRelativeTo(null);
         exitDialog.setVisible(true);

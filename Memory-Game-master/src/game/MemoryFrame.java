@@ -12,10 +12,10 @@ public class MemoryFrame extends JFrame {
     public static final int DEFAULT_HEIGHT = 1024;
 
     private MemoryFrame() {
-        setTitle("Memory Game");
+        setTitle("Cocok Rumus");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
-        setIconImage(new ImageIcon(getClass().getResource("../images/Shark.png")).getImage());
+        setIconImage(new ImageIcon(getClass().getResource("../images/brain.png")).getImage());
 
         add(new MenuComponent());
         //pack();

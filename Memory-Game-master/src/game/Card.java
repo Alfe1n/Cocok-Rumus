@@ -7,14 +7,14 @@ import java.awt.*;
 public class Card extends JButton {
     private ImageIcon imageIcon;
     private Color color;
-    private boolean addmoduedToBoard;
+    private boolean addedToBoard;
     private boolean clicked;
     private boolean ninjaMode;
 
     public Card(int boardSize) {
         addedToBoard = false;
         ninjaMode = false;
-        imageIcon = new ImageIcon(getClass().getResource("../images/Shark" + boardSize + ".png"));
+        imageIcon = new ImageIcon(getClass().getResource("../images/brain" + boardSize + ".png"));
 
         setPrimaryCard();
 

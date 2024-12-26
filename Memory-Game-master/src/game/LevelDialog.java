@@ -10,7 +10,7 @@ public class LevelDialog extends Dialog {
     private boolean selected;
 
     public LevelDialog() {
-        super("New Game");
+        super("Cocokan Rumus");
 
         getPanel().add(new SelectLevelPanel(this), BorderLayout.CENTER);
         addNewGameButton();
@@ -19,7 +19,7 @@ public class LevelDialog extends Dialog {
     }
 
     public void addNewGameButton() {
-        MenuButton selectGame = new MenuButton("Play Game", new Color(0x8D8A8D), 36, new Dimension(350, 100));
+        MenuButton selectGame = new MenuButton("Mainkan", new Color(0x8D8A8D), 36, new Dimension(350, 100));
 
         selectGame.addActionListener((event) ->
         {
